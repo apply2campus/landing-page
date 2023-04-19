@@ -1,0 +1,569 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Apply2Campus | Overseas University Admissions | Study Abroad</title>
+    <meta name="description" content="Apply2Campus helps students from all over the world to apply to universities abroad. Get expert guidance on admissions, scholarships, and visa requirements. Study abroad with Apply2Campus.">
+    <link rel="canonical" href="https://www.apply2campus.com">
+    <meta property="og:title" content="Apply2Campus | Overseas University Admissions | Study Abroad">
+    <meta property="og:description" content="Apply2Campus helps students from all over the world to apply to universities abroad. Get expert guidance on admissions, scholarships, and visa requirements. Study abroad with Apply2Campus.">
+    <meta property="og:image" content="https://www.apply2campus.com/">
+    <meta property="og:url" content="https://www.apply2campus.com/">
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/img/favicons/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/img/favicons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/img/favicons/favicon-16x16.png' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicons/favicon.png' %}">
+    <link rel="manifest" href="{% static 'assets/img/favicons/manifest.json' %}">
+    <meta name="msapplication-TileImage" content="{% static 'assets/img/favicons/mstile-150x150.png' %}">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="{% static 'assets/css/theme.css' %}" rel="stylesheet" />
+
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="/"><img src="{% static 'assets\img\ACC_logo.png' %}" height="80" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#destinations">Destinations</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#blogs">Blogs</a></li>
+            </ul>
+            <div class="d-flex ms-lg-4"><a class="btn btn-warning ms-3" href="#contactus">Contact Us</a></div>
+          </div>
+        </div>
+      </nav>
+      <section class="pt-7" id="home">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-md-start text-center py-6">
+              <h1 class="mb-4 fs-9 fw-bold">Connecting students to Global<br> Opportunities</h1>
+              <p class="mb-6 lead text-secondary">Looking to study abroad or pursue a graduate degree overseas?<br class="d-none d-xl-block" />Look no further than Apply2Campus.<br class="d-none d-xl-block" /></p>
+              <div class="text-center text-md-start"><a class="btn btn-warning me-3 btn-lg" href="{% url 'form' %}" role="button">Get started</a></div>
+            </div>
+            <div class="col-md-6 text-end"><img class="pt-7 pt-md-0 img-fluid" src="{% static 'assets\img\illustrations\main_illu.png' %}" alt="" /></div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-5 pt-md-9 mb-6" id="about">
+
+        <div class="bg-holder z-index--1 bottom-0 d-none d-lg-block" style="background-image:url({% static 'assets/img/category/shape.png' %});opacity:.5;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <h1 class="fs-9 fw-bold mb-4 text-center"> Study Abroad Made Easy: <br class="d-none d-xl-block" />Four Steps to Your International Education</h1>
+          <br>
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 mb-2 text-sm-center text-md-left"> <img class="mb-3" src="{% static 'assets\img\service icon\register_service_1.png' %}" width="45" alt="Feature" />
+              <h4 class="mb-3">Register with Us</h4>
+              <p class="mb-0 fw-medium text-secondary">Register yourself to Study Aboard !</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-2 text-sm-center text-md-left"> <img class="mb-3 " src="{% static 'assets\img\service icon\details_service_2.png' %}" width="45" alt="Feature" />
+              <h4 class="mb-3">Fill in your Details</h4>
+              <p class="mb-0 fw-medium text-secondary">Fill few details</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-2 text-sm-center text-md-left"> <img class="mb-3 " src="{% static 'assets\img\service icon\counselors_service_3.png' %}" width="52" alt="Feature" />
+              <h4 class="mb-3">Talk to Our Counsellors</h4>
+              <p class="mb-0 fw-medium text-secondary">Our experts will help you all the way</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-2 text-sm-center text-md-left"> <img class="mb-3" src="{% static 'assets\img\service icon\dream_service_4.png' %}" width="45" alt="Feature" />
+              <h4 class="mb-3">Live Your Study Abroad Dream</h4>
+              <p class="mb-0 fw-medium text-secondary">Fly to your Dream University</p>
+            </div>
+            <br>
+          </div>
+          <br>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-5 mb-4" id="about">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="text-secondary">Explore Your World: </h5>
+              <h2 class="mb-2 fs-7 fw-bold">The Ultimate Guide to Study Abroad</h2>
+              <p class="mb-4 fw-medium text-secondary">
+                Looking for an unforgettable study abroad experience? Apply2Campus, an online portal helping students pursue their applications to different universities across countries such as USA, UK, Canada, Australia, Ireland, and New Zealand, has got you covered.<br><br>
+
+                Our comprehensive guide offers everything you need to know to make the most of your time overseas, from choosing the perfect program to navigating cultural differences and building a global network. With Apply2Campus, the world is your classroom – so why wait? Start exploring today!
+              </p>
+            </div>
+            <div class="col-lg-6 text-end"><img class="img-fluid" src="{% static 'assets\img\hero\Service_hero.png' %}" alt="" style="height: 520px;"/></div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section><br><br>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <section class="container-fluid ftco-animate" style="margin-top: -160px;">
+        <style>
+          .carousel {
+            overflow: hidden;
+            width: 100%;
+          }
+      
+          .carousel-container {
+            display: flex;
+            width: 400%; /* 4 images, each taking up 100% of the width */
+            animation: scroll 20s infinite linear; /* scroll for 20 seconds and repeat infinitely */
+            animation-delay: 2s; /* delay animation by 2 seconds for a more attractive effect */
+          }
+      
+          .carousel-container img {
+            height: 200px;
+            width: 200px; /* each image takes up 1/4 of the container */
+            margin-right: 20px; /* add space between the images */
+            object-fit: cover; /* scale images to fit their containers */
+            transition: transform 0.5s ease-out; /* add a smooth transition effect when images change */
+          }
+      
+          .carousel-container img:last-of-type {
+            margin-right: 0; /* remove right margin from last image */
+          }
+          .carousel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0; /* hide the overlay by default */
+            background-color: rgba(0, 0, 0, 0.5); /* add a semi-transparent background */
+            transition: opacity 0.5s ease-out; /* add a smooth transition effect */
+          }
+          .carousel:hover .carousel-overlay {
+            opacity: 1; /* show the overlay when the mouse hovers over the carousel */
+          }
+      
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-10%); /* move container 3x the width of one image */
+            }
+          }
+      
+        </style>
+        <script>
+          const carousel = document.querySelector('.carousel');
+      const container = document.querySelector('.carousel-container');
+      
+      carousel.addEventListener('mouseover', () => {
+        container.style.animationPlayState = 'paused'; /* pause the animation */
+      });
+      
+      carousel.addEventListener('mouseout', () => {
+        container.style.animationPlayState = 'running'; /* resume the animation */
+      });
+        </script>
+        <div class="carousel ftco-animate">
+          <div class="carousel-container">
+            <img src="{% static 'assets\img\flags\flag-a2c-aus.png' %}">
+            <img src="{% static 'assets\img\flags\flag-a2c-canada.png' %}" alt="">
+            <img src="{% static 'assets\img\flags\flag-a2c-germany.png' %}" alt="">
+            <img src="{% static 'assets\img\flags\flag-a2c-ireland.png' %}" alt="">
+            <img src="{% static 'assets\img\flags\flag-a2c-newzealand.png' %}" alt="">
+            <img src="{% static 'assets\img\flags\flag-a2c-uk.png' %}" alt="">
+            <img src="{% static 'assets\img\flags\flag-a2c-usa.png' %}" alt="">
+            <img src="{% static 'assets\img\flags\flag-a2c-aus.png' %}">
+            <img src="{% static 'assets\img\flags\flag-a2c-canada.png' %}" alt="">
+            <img src="{% static 'assets\img\flags\flag-a2c-germany.png' %}" alt="">
+            <img src="{% static 'assets\img\flags\flag-a2c-ireland.png' %}" alt="">
+            <img src="{% static 'assets\img\flags\flag-a2c-newzealand.png' %}" alt="">
+            <img src="{% static 'assets\img\flags\flag-a2c-uk.png' %}" alt="">
+            <img src="{% static 'assets\img\flags\flag-a2c-usa.png' %}" alt="">
+          </div>
+        </div>
+      </section><br><br>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+        <section class="pt-5 pt-md-9 mb-6" id="destinations" style="margin-top: -180px;">
+
+          <div class="bg-holder z-index--1 bottom-0 d-none d-lg-block" >
+          </div>
+          <!--/.bg-holder-->
+  
+          <div class="container">
+            <h1 class="fs-9 fw-bold mb-4 text-center">Discover Your Dream Destinations to Study<br class="d-none d-xl-block" /></h1>
+          
+            <!-- Cards -->
+
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <a href="{% url 'form' %}"><div class="col">
+                <div class="card h-200">
+                  <img src="{% static 'assets\img\country cards\study-usa-apply2campus.jpg' %}" class="card-img-top" alt="...">
+                </div>
+              </div></a>
+
+              <a href="{% url 'form' %}"><div class="col">
+                <div class="card h-100">
+                  <img src="{% static 'assets\img\country cards\study-uk-apply2campus.jpg' %}" class="card-img-top" alt="...">
+                </div>
+              </div></a>
+
+              <a href="{% url 'form' %}"><div class="col">
+                <div class="card h-100">
+                  <img src="{% static 'assets\img\country cards\study-canada-apply2campus.jpg' %}" class="card-img-top" alt="...">
+                </div>
+              </div></a>
+
+              <a href="{% url 'form' %}"><div class="col">
+                <div class="card h-100">
+                  <img src="{% static 'assets\img\country cards\study-ireland-apply2campus.jpg' %}" class="card-img-top" alt="...">
+                </div>
+              </div></a>
+
+              <a href="{% url 'form' %}"><div class="col">
+                <div class="card h-100">
+                  <img src="{% static 'assets\img\country cards\study-newzealand-apply2campus.jpg' %}" class="card-img-top" alt="...">
+                </div>
+              </div></a>
+
+              <a href="{% url 'form' %}"><div class="col">
+                <div class="card h-100">
+                  <img src="{% static 'assets\img\country cards\study-australia-apply2campus.jpg' %}" class="card-img-top" alt="...">
+                </div>
+              </div></a>
+
+              <a href="{% url 'form' %}"><div class="col">
+                <div class="card h-100">
+                  <img src="{% static 'assets\img\country cards\study-france-apply2campus.jpg' %}" class="card-img-top" alt="...">
+                </div>
+              </div></a>
+
+              <a href="{% url 'form' %}"><div class="col">
+                <div class="card h-100">
+                  <img src="{% static 'assets\img\country cards\study-germany-apply2campus.jpg' %}" class="card-img-top" alt="...">
+                </div>
+              </div></a>
+            </div>
+        
+            <!-- Card End -->
+
+          </div><!-- end of .container-->
+  
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-5" id="blogs">
+
+        <div class="container">
+          <h1 class="fw-bold fs-6 mb-3">Insights and Inspiration</h1>
+          <p class="mb-6 text-secondary">Explore the Apply2Campus Blog</p>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <a href="{% url 'blog1' %}">
+                <div class="card"><img class="card-img-top" src="{% static 'assets/img/marketing/marketing01.png' %}" alt="" style="height: 200px; " />
+                  <div class="card-body ps-0">
+                    <p class="text-secondary">By <a class="fw-bold text-decoration-none me-1" href="/">A2C</a>|<span class="ms-1">10 april 2023</span></p>
+                    <h3 class="fw-bold">Why Learning a Foreign Language</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 mb-4">
+              <a href="{% url 'blog2' %}">
+                <div class="card"><img class="card-img-top" src="{% static 'assets/img/marketing/marketing02.png' %}" alt="" style="height: 200px; "/>
+                  <div class="card-body ps-0">
+                    <p class="text-secondary">By <a class="fw-bold text-decoration-none me-1" href="/">A2C</a>|<span class="ms-1">03 March 2023</span></p>
+                    <h3 class="fw-bold">Choosing the Perfect Study Abroad Program</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 mb-4">
+              <a href="{% url 'blog3' %}">
+                <div class="card"><img class="card-img-top" src="{% static 'assets/img/marketing/marketing03.png' %}" alt="" style="height: 200px; " />
+                  <div class="card-body ps-0">
+                    <p class="text-secondary">By <a class="fw-bold text-decoration-none me-1" href="#">A2C</a>|<span class="ms-1">06 january 2023</span></p>
+                    <h3 class="fw-bold">Top Scholarship Opportunities for International Students</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+        <section class="py-md-11 py-8" id="contactus">
+
+          <div class="bg-holder z-index--1 bottom-0 d-none d-lg-block background-position-top" style="background-image:url({% static 'assets/img/superhero/oval.png' %});opacity:.5; background-position: top !important ;">
+          </div>
+          <!--/.bg-holder-->
+  
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 text-center">
+                <h1 class="fw-bold mb-4 fs-7">Need a super hero?</h1>
+                <p class="mb-5 text-info fw-medium">Connect with Apply2Campus Counselors for Personalized Support in Your Overseas Education Journey.<br />Contact us today to get started.</p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-warning btn-md">Contact our expert</button>
+                
+              </div>
+            </div>
+          </div><!-- end of .container-->
+
+
+          <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Contact US</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form style="padding: 20px" id="contactForm" name="contactForm" class="contactForm" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" id="name"
+                  placeholder="Name">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="email"  class="form-control" name="emailaddress" id="emailaddress"
+                  placeholder="Email">
+              </div>
+            </div>
+            <div class="col-md-12">
+                                    <br>
+                                </div>
+                                <div class="row col-md-12 text-center">
+                                    <div class="col-md-6">
+                        <input type="radio" name="meet" value="Meet_Online" id="Meet_Online">
+                                        <label for="option1">Meet Online</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="radio" name="meet" value="Visit_Office" id="Visit_Office">
+                                        <label for="option2">Visit Office</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <br>
+                                </div>
+
+<style>
+/* Style for the date input element */
+input[type="date"] {
+border: none;
+padding: 10px;
+font-size: 16px;
+background-color: #f2f2f2;
+color: #333;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+width: 90%;
+
+}
+
+
+
+/* Style for the date input element when it is focused */
+input[type="date"]:focus {
+outline: none;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+</style>
+                                <div class="col-md-12">
+                                    <input name="date" type="date" id="date" name="date">
+                                </div>
+                                <div class="col-md-12">
+                                    <br>
+                                    <br>
+                                </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <button type="submit"  value="Send Message" class="btn btn-primary"> send message </button>
+                <div class="submitting"></div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+          <!-- Button trigger modal -->
+
+  
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pb-2 pb-lg-5">
+
+        <div class="container">
+          <div class="row border-top border-top-secondary pt-7">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-6 mb-lg-0 mb-sm-2 order-1 order-md-1 order-lg-1"><img class="mb-4" src="{% static 'assets/img/ACC_logo.png' %}" width="184" alt="" />
+            <br>
+            <div style="display: flex; justify-content: space-between; width: 90%;" >
+              <!-- Facebook -->
+              <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+              <!-- Twitter -->
+              <i class="fab fa-twitter" style="color: #55acee;"></i>
+              <!-- Instagram -->
+              <i class="fab fa-instagram" style="color: #ac2bac;"></i>
+              <!-- Linkedin -->
+              <i class="fab fa-linkedin-in" style="color: #0082ca;"></i>      
+              <!-- Youtube -->
+              <i class="fab fa-youtube" style="color: #ed302f;"></i>
+              <!-- Whatsapp -->
+              <i class="fab fa-whatsapp" style="color: #25d366;"></i>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-3 order-md-3 order-lg-2">
+              <p class="fs-2 mb-lg-4">Quick Links</p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#about">About us</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#destinations">Destinations</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#blogs">Blogs</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#contactus">Contact Us</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-4 order-md-4 order-lg-3">
+              <p class="fs-2 mb-lg-4">Legal stuff</p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">Disclaimer</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">Financing</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">Privacy Policy</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">Terms of Service</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0 order-2 order-md-2 order-lg-4">
+              <p class="fs-2 mb-lg-4">
+                Stay Up-to-Date with Apply2Campus: Subscribe to Our Newsletter Today</p>
+              <form class="mb-3" method="POST">
+                {% csrf_token %}
+                <input class="form-control" type="email" name="newsletter" placeholder="Enter your Email" aria-label="phone" />
+                <br>
+                <button class="btn btn-warning fw-medium py-1" type="submit">Subscribe Now</button>
+              </form>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="text-center py-0">
+
+        <div class="container">
+          <div class="container border-top py-3">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-auto mb-1 mb-md-0">
+                <p class="mb-0">&copy; 2023 Your Company Inc </p>
+              </div>
+              <div class="col-12 col-md-auto">
+                <p class="mb-0">
+                  Designed & Developed by <a class="text-decoration-none ms-1" href="https://themewagon.com/" target="_blank">apply2campus</a></p>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+    <div class="modal fade" id="popupVideo" tabindex="-1" aria-labelledby="popupVideo" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <iframe class="rounded" style="width:100%;height:500px;" src="https://www.youtube.com/embed/_lhdhL4UDIo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="{% static 'vendors/@popperjs/popper.min.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/bootstrap.min.js' %}"></script>
+    <script src="{% static 'vendors/is/is.min.js' %}"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="{% static 'vendors/fontawesome/all.min.js' %}"></script>
+    <script src="{% static 'assets/js/theme.js' %}"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
+  </body>
+
+</html>
